@@ -1,0 +1,124 @@
+/* BSI Blog News */
+.bsi-blog-news-posts {
+  padding: 0;
+  overflow-x: hidden;
+}
+.bsi-blog-news-title h2 {
+  font-size: 36px;
+  font-weight: 600;
+  margin-bottom: 36px;
+}
+.blog-news-card {
+  background-color: #f2f2f2;
+  padding: 15px 16px 30px 16px;
+  margin-bottom: 25px;
+  display: flex;
+  flex-direction: column;
+  height:100%;
+}
+
+.text-height-3 {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.blog-news-image img {
+  max-width: 100%;
+  min-width: 100%;
+}
+
+.news-card h3{
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.blog-news-card h3 {
+  font-size: 24px;
+  font-weight: 400;
+  margin-top: 18px;
+  text-align: center;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.blog-news-card p {
+  font-size: 14px;
+  font-weight: 700;
+  margin: 25px;
+  margin-top: 12px;
+  margin-bottom: 11px;
+  text-align: center;
+  color: var(--muted);
+}
+.blog-news-card hr {
+  color: var(--muted);
+}
+.blog-news-card time {
+  color: var(--mainColor);
+  display: block;
+  font-size: 14px;
+  font-weight: 400;
+  text-align: center;
+  margin-top: 11px;
+}
+
+.view-all-blog-news {
+  max-width: 350px;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.view-all-blog-news a {
+  outline: none;
+  border: none;
+  color: var(--mainColor);
+  background-color: var(--lightGray);
+  font-size: 18px;
+  font-weight: 600;
+  display: inline-block;
+  padding: 8px 21px;
+}
+.view-all-blog-news a:hover {
+  color: var(--mainColor);
+  background-color: var(--lightGray);
+}
+
+@media screen and (max-width: 768px) {
+  .bsi-blog-news-posts {
+    padding: 0;
+  }
+  .bsi-blog-news-title h2 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 25px;
+
+    padding-left: 0;
+    width: 90%;
+    max-width: 350px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .blog-news-card {
+    padding: 15px 14px 13px 14px;
+    width: 90%;
+    max-width: 350px;
+    margin: auto;
+    margin-bottom: 12px;
+  }
+  .blog-news-card h3 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 13px;
+  }
+  .blog-news-card p {
+    font-size: 13px;
+    font-weight: 500;
+    margin: 25px;
+    margin-top: 7px;
+    margin-bottom: 20px;
+  }
+}

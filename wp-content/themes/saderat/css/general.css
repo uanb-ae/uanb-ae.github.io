@@ -1,0 +1,44 @@
+@import url("https://fonts.googleapis.com/css2?family=Readex+Pro:wght@200;300;400;500;600;700&amp;display=swap");
+:root {
+  --mainColor: #29166f;
+  --muted: #616161;
+  --lightGray: #eceff1;
+}
+* {
+  font-family: "Readex Pro", sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  color: #000;
+  overflow-x: hidden;
+}
+body.is-rtl{
+  direction: rtl;
+}
+
+html :where(img) {
+  height: auto;
+  max-width: unset;
+}
+
+.stop-scrolling {
+  height: 100%;
+  overflow: hidden;
+}
+
+a,
+a:hover {
+  text-decoration: none;
+  color: inherit;
+}
+
+img,
+svg {
+  user-select: none;
+}
+
+.like-pre {
+  white-space: pre-line;
+}

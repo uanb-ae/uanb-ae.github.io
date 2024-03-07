@@ -1,0 +1,106 @@
+.container--single-news {
+  margin-top: 67px;
+}
+/** better image */
+/* .container--single-news .img-container-container{
+  margin:auto;
+} */
+
+.container--single-news h2.all-news-title {
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 40px;
+  margin-bottom: 23px;
+}
+.container--single-news h1.news-title {
+  font-weight: 500;
+  font-size: 24px;
+  margin-bottom: 0;
+}
+.container--single-news time.news-date {
+  display: inline-block;
+  font-weight: 400;
+  font-size: 18px;
+  color: var(--muted);
+  margin-top: 5px;
+}
+.container--single-news p.left-news {
+  font-weight: 500;
+  font-size: 19px;
+  line-height: 28px;
+  margin-top: 8px;
+}
+.top-news-content {
+  margin-bottom: 53px;
+}
+
+/*! will override the main news color and size and Might change */
+.rest-of-news-container p {
+  color: var(--muted);
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: 500;
+}
+
+.container--single-news .img-container img {
+  width: 100%;
+}
+
+.container--news-in-singe {
+  margin-top: 45px;
+}
+.container--news-in-singe h2 {
+  font-size: 36px;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+
+@media screen and (max-width: 768px) {
+  .container--single-news {
+    margin-top: 28px;
+  }
+
+  .container--news-in-singe {
+    margin-top: 25px;
+  }
+
+  .container--single-news h2.all-news-title {
+    font-size: 18px;
+    line-height: 40px;
+    margin-bottom: 31px;
+  }
+  .container--single-news h1.news-title {
+    font-size: 16px;
+    margin-bottom: 0;
+  }
+  .container--single-news time.news-date {
+    font-size: 14px;
+    margin-top: 5px;
+  }
+
+  .container--single-news p.left-news {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 19px;
+    margin-top: 8px;
+    margin-bottom: 25px;
+  }
+  .top-news-content {
+    margin-bottom: 25px;
+  }
+
+  .rest-of-news-container p {
+    font-size: 14px;
+    line-height: 19px;
+  }
+
+  .container--news-in-single {
+    margin-top: 36px;
+    margin-bottom: 51px;
+  }
+  .container--news-in-single h2 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 37px;
+  }
+}

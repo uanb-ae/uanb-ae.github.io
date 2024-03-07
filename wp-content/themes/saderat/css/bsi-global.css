@@ -1,0 +1,219 @@
+.container--bsi-global {
+  margin-top: 82px;
+  margin-bottom: 114px;
+}
+.container--bsi-global .bsi-global-title h1 {
+  font-size: 36px;
+  font-weight: 600;
+  margin-bottom: 42px;
+}
+
+.global-branch {
+  background-color: var(--lightGray);
+  padding: 54px 59px;
+  margin-bottom: 14px;
+  display: flex;
+  align-items: flex-end;
+}
+
+.global-branch-info > div {
+  display: flex;
+  flex-direction: column;
+}
+
+.global-branch-info {
+  display: flex;
+  flex-direction: row;
+  align-self: flex-start;
+}
+.global-branch-info-btn-container {
+  margin-right: 0;
+  margin-left: auto;
+}
+body.is-rtl .global-branch-info-btn-container {
+  margin-right: auto;
+  margin-left: 0;
+}
+.global-branch__img-container {
+  margin-right: 58px;
+}
+body.is-rtl .global-branch__img-container {
+  margin-left: 58px;
+  margin-right: 0;
+}
+.global-branch__img-container img {
+  width: 190px;
+}
+
+.global-little-info-1 {
+  margin-right: 70px;
+}
+body.is-rtl .global-little-info-1 {
+  margin-left: 70px;
+  margin-right: 0;
+}
+.global-little-info-2 {
+  justify-content: end;
+}
+.global-branch-info h2 {
+  font-size: 28px;
+  font-weight: 600;
+  margin-top: 0;
+  padding-top: 0;
+  margin-bottom: 7px;
+}
+.global-branch-info span {
+  font-size: 20px;
+  font-weight: 500;
+}
+.global-branch-info div > span > span:last-child {
+  color: var(--muted);
+}
+
+.global-branch-info-btn-container button {
+  border: none;
+  outline: none;
+  color: #fff;
+  background-color: var(--mainColor);
+  font-size: 24px;
+  font-weight: 600;
+  padding: 5px 25px;
+}
+
+.global-branch__img-container button {
+  display: none;
+}
+
+@media screen and (max-width: 1200px) {
+  .global-branch {
+    padding: 30px 30px;
+  }
+  .global-branch__img-container {
+    margin-right: 50px;
+  }
+  /* body.is-rtl .global-branch__img-container {
+    margin-left: 50px;
+    margin-right: 0;
+  } */
+  .global-branch__img-container img {
+    width: 150px;
+  }
+  .global-little-info-1 {
+    margin-right: 50px;
+  }
+  /* body.is-rtl .global-little-info-1 {
+    margin-left: 50px;
+    margin-right: 0;
+  } */
+
+  .global-branch-info h2 {
+    font-size: 20px;
+  }
+  .global-branch-info span {
+    font-size: 16px;
+  }
+
+  .global-branch-info-btn-container button {
+    font-size: 20px;
+    padding: 5px 20px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .container--bsi-global {
+    margin-top: 28px;
+    margin-bottom: 47px;
+  }
+  .bsi-global-title {
+    max-width: 450px;
+    width: 95%;
+    padding: 0;
+    margin: auto;
+  }
+  .container--bsi-global .bsi-global-title h1 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 37px;
+  }
+  .global-branch {
+    max-width: 450px;
+    width: 95%;
+    margin: auto;
+  }
+  .global-branch-info-btn-container button {
+    display: none;
+  }
+
+  .global-branch__img-container button {
+    display: block;
+  }
+
+  .global-branch-info {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .global-branch-info h2 {
+    font-size: 14px;
+    font-weight: 700;
+  }
+  .global-branch-info span {
+    font-size: 13px;
+    font-weight: 500;
+  }
+
+  .global-branch {
+    padding: 40px 40px;
+    margin-bottom: 13px;
+    display: flex;
+    align-items: flex-start;
+  }
+
+  .global-branch__img-container {
+    margin-right: 12px;
+  }
+  body.is-rtl .global-branch__img-container {
+    margin-right: 0;
+    margin-left: 12px;
+  }
+  .global-branch__img-container img {
+    display: block;
+    width: 104px;
+    margin-top: 0;
+    margin-bottom: 25px;
+  }
+  .global-branch__img-container button {
+    border: none;
+    outline: none;
+    background-color: var(--mainColor);
+    color: #fff;
+    font-size: 14px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .global-branch__img-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
+
+.fade-globals:hover .branch-wrapper .global-branches .global-branch {
+  opacity: 0.5;
+  transition: all 0.3s;
+}
+
+.fade-globals .branch-wrapper:hover .global-branches .global-branch {
+  opacity: 1;
+  transform: scale(1.1);
+  transition: all 0.3s;
+  box-shadow: 0px 8px 10px hsl(0deg 0% 0% / 0.09);
+}
+/* .bsi-global-branches-modal:hover ~ .global-branches .global-branch, */
+.bsi-global-branches-modal:hover + .global-branches .global-branch{
+  transform: scale(1)!important;
+}
+.global-branch {
+  transition: all 0.3s;
+}

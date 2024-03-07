@@ -1,0 +1,264 @@
+.container--contact-us {
+  margin-top: 0px;
+}
+.container--contact-us .row > * {
+  padding: 0;
+}
+.form-container{
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.25);
+  clip-path: inset(-15px -15px -15px 0px);
+} 
+.info-container{
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.25);
+  clip-path: inset(-15px 0px -15px -15px);
+} 
+
+body.is-rtl .form-container{
+  clip-path: inset(-15px 0px -15px -15px);
+}
+body.is-rtl .info-container{
+  clip-path: inset(-15px -15px -15px 0px);
+}
+
+.form-info-container {
+  margin-bottom: 60px;
+}
+.hr-parent {
+  position: relative;
+}
+.vertical-hr {
+  position: absolute;
+  height: 80%;
+  width: 0.5px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: var(--muted);
+}
+.container--contact-us .map-container iframe {
+  width: 100%;
+  height: 730px;
+  margin-bottom: -425px;
+}
+
+@media (max-width:992px) {
+  .container--contact-us .map-container iframe {
+    height: 600px;
+    margin-bottom: -300px;
+  }
+}
+
+.container--contact-us .form-container form label:not(input) {
+  line-height: 40px;
+}
+.container--contact-us .form-container form label {
+  font-size: 16px;
+  font-weight: 700;
+  width: 100%;
+}
+.container--contact-us .form-container form select {
+  font-size: 16px;
+  font-weight: 700;
+  width: 100%;
+  text-indent: 1px;
+  text-overflow: "";
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-color: #fff0;
+  appearance: none;
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  background-image: url("data:image/svg+xml,%3Csvg width='15' height='9' viewBox='0 0 15 9' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M13.2375 0L7.5 5.56275L1.7625 0L0 1.71255L7.5 9L15 1.71255L13.2375 0Z' fill='black'/%3E%3C/svg%3E%0A");
+}
+.container--contact-us .info-container,
+.container--contact-us .form-container {
+  padding: 45px 59px;
+  background-color: #f2f2f2cc;
+}
+.container--contact-us .info-container {
+  padding-right: 40px;
+}
+
+body.is-rtl .container--contact-us .form-container form{
+  direction: rtl;
+}
+body.is-rtl .container--contact-us .form-container form{
+  direction: rtl;
+}
+.container--contact-us .form-container form select {
+  direction: ltr;
+}
+.container--contact-us .form-container form select,
+.container--contact-us .form-container form textarea,
+.container--contact-us .form-container form input:not([type="submit"]) {
+  padding: 7.5px 15px;
+  border: 1px solid var(--muted);
+  border-radius: 5px;
+  line-height: 25px;
+  width: 100%;
+  outline: none;
+}
+.container--contact-us .form-container form textarea,
+.container--contact-us .form-container form input:not([type="submit"]) {
+  background: none;
+}
+.container--contact-us .form-container form select:focus,
+.container--contact-us .form-container form textarea:focus,
+.container--contact-us .form-container form input:not([type="submit"]):focus {
+  border-color: var(--mainColor);
+  background-color: #fafafa;
+}
+
+.container--contact-us .form-container form input[type="submit"] {
+  border: none;
+  outline: none;
+  font-size: 18px;
+  font-weight: 600;
+  background-color: var(--mainColor);
+  color: #fff;
+  padding: 10px 30px;
+}
+
+.container--contact-us .info-container {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 23px;
+}
+.container--contact-us .info-container h1 {
+  font-size: 20px;
+  font-weight: 700;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  color: #000;
+}
+.container--contact-us .info-container span.info-title {
+  color: #000;
+  display: inline;
+  font-size: 18px;
+  font-weight: 700;
+}
+.container--contact-us .info-container p {
+  line-height: 32px;
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--muted);
+}
+.contact-us-btns {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.contact-btns-first {
+  margin-bottom: 20px;
+}
+.container--contact-us .contact-btn {
+  background-color: var(--mainColor);
+  display: inline-block;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+  margin-top: auto;
+  margin-bottom: 0;
+  /* padding: 10px 35px; */
+  width: 47%;
+  min-width: 160px;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  /* width:100%; */
+  margin-bottom: 15px;
+  /* width: fit-content; */
+  border: solid 1px var(--mainColor);
+}
+.container--contact-us .contact-btn.contact-btn-outlined {
+  background-color: #0000;
+  display: inline;
+  color: var(--mainColor);
+}
+
+@media screen and (max-width: 768px) {
+  .container--contact-us .info-container,
+  .container--contact-us .form-container {
+    padding: 38px 40px;
+  }
+  .container--contact-us .form-container {
+    padding: 20px 40px;
+  }
+
+  .container--contact-us {
+    margin-top: 0;
+  }
+
+  .hr-parent {
+    position: relative;
+  }
+  .vertical-hr {
+    position: relative;
+    height: 0.5px;
+    width: 70%;
+    max-width: 420px;
+    top: -2px;
+    margin-bottom: -2px;
+    background-color: var(--muted);
+  }
+  .form-container,
+  .info-container {
+    margin: auto;
+    max-width: 500px;
+    width: 85%;
+  }
+
+  .container--contact-us .info-container h1 {
+    font-size: 18px;
+    margin-top: 0;
+    margin-bottom: 14px;
+  }
+  .container--contact-us .info-container span.info-title {
+    font-size: 14px;
+  }
+  .container--contact-us .info-container p {
+    line-height: 20px;
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+  .container--contact-us .contact-btn {
+    font-size: 18px;
+    font-weight: 700;
+    margin-top: auto;
+    margin-bottom: 0;
+    padding: 7px 25px;
+    margin-bottom: 0px;
+  }
+
+  .contact-btns-first {
+    margin-bottom: 30px;
+  }
+
+  .container--contact-us .form-container form label {
+    font-size: 16px;
+    font-weight: 700;
+  }
+
+  .container--contact-us .form-container form textarea {
+    resize: none;
+    height: 120px;
+  }
+  .container--contact-us .form-container form textarea,
+  .container--contact-us .form-container form input:not([type="submit"]) {
+    padding: 7.5px 15px;
+    border: 1px solid var(--muted);
+    border-radius: 5px;
+    line-height: 25px;
+    background: none;
+    width: 100%;
+    outline: none;
+  }
+}
+
+@media screen and (max-width:500px){
+  .container--contact-us .contact-btn{
+    display:block;
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+}

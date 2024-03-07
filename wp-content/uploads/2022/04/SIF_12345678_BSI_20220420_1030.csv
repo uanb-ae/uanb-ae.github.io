@@ -1,0 +1,4 @@
+Employer EID,File Creation Date,File Creation Time,Payer EID,Payer QID,Payer Bank Short Name,Payer IBAN,Salary Year and Month,Total salaries,Total records, SIF Version,,,,,,,,,,,
+12345678,20220420,1030,12345678,,BSI,QA03BSIR00000026230******00001,202103,2000,1,1,,,,,,,,,,,
+Record Id,Employee QID,Employee Visa ID,Employee Name,Employee Bank Short Name,Employee Account #,Salary Frequency,Number of working Days,Net Salary,Basic Salary,Extra hours,Extra Income,Deductions,Payment Type,Note / Comments, Housing Allowance, Food Allowance, Transportation Allowance, Over Time Allowance, Deduction Reason Code,Extra field 1,Extra field 2
+1,22222222222,,ABCD,BSI,QA38BSIR00000026230******0030,M,31,2000,1200,0,800,0,Settlement Payment,no comment,0,0,0,0,0,,

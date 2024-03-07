@@ -1,0 +1,283 @@
+.saderat-navbar {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  z-index: 3;
+}
+.saderat-navbar.bg-light {
+  background-color: #fff !important;
+}
+.navbar {
+  position: fixed;
+  width: 100%;
+  top: 0;
+}
+.navbar-illusion {
+  height: 110px;
+  background-color: #f000;
+  width: 100%;
+}
+.saderat-navbar .navbar-brand {
+  padding-left: 5%;
+}
+body.is-rtl .saderat-navbar .navbar-brand {
+  padding-left: 0;
+  padding-right: 3%;
+}
+
+.saderat-navbar .navbar-brand img {
+  max-width: unset;
+}
+.saderat-navbar.navbar-expand-lg .navbar-nav {
+  align-items: baseline;
+  justify-content: flex-end;
+  width: 100%;
+  margin-right: 1%;
+}
+.saderat-navbar.navbar-expand-lg .navbar-nav .menu-item,
+.saderat-navbar.navbar-expand-lg .navbar-nav .nav-link {
+  padding-left: 1.2vw;
+  padding-right: 1.2vw;
+  padding-bottom: 0;
+  white-space: nowrap;
+}
+body.is-rtl .saderat-navbar.navbar-expand-lg .navbar-nav .menu-item,
+body.is-rtl .saderat-navbar.navbar-expand-lg .navbar-nav .nav-link {
+  padding-left: 0.9vw;
+  padding-right: 0.9vw;
+}
+.saderat-navbar .menu-item,
+.saderat-navbar .nav-link {
+  font-size: 18px;
+  font-weight: 400;
+  color: #000000;
+  transition: all 0.2s;
+}
+.saderat-navbar .navbar-nav .menu-item:focus,
+.navbar-light .navbar-nav .menu-item:hover,
+.saderat-navbar .navbar-nav .nav-link:focus,
+.navbar-light .navbar-nav .nav-link:hover {
+  color: #000000;
+}
+.saderat-navbar .navbar-nav .menu-item,
+.saderat-navbar .navbar-nav .nav-link {
+  color: #000000;
+}
+.saderat-navbar .menu-item:hover,
+.saderat-navbar .menu-item.current-menu-item,
+.saderat-navbar .nav-link:hover,
+.saderat-navbar .nav-link.active {
+  font-size: 20px;
+  font-weight: 700;
+  transition: all 0.2s;
+}
+
+.navbar-light .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3Csvg width='40' height='27' viewBox='0 0 40 27' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 27H40V22.5H0V27ZM0 15.75H40V11.25H0V15.75ZM0 0V4.5H40V0H0Z' fill='%2329166F'/%3E%3C/svg%3E%0A");
+}
+.navbar-light .navbar-toggler {
+  color: none;
+  border: 0;
+}
+.navbar-light .navbar-toggler:focus {
+  box-shadow: none;
+}
+.navbar-toggler {
+  font-size: 1.5rem;
+}
+.saderat-navbar .flags-desktop {
+  margin-left: auto;
+  padding: 13px 58px 13px 16px;
+  background-color: #eceff1;
+  position: relative;
+  margin-top: 10px;
+  cursor: pointer;
+}
+body.is-rtl .saderat-navbar .flags-desktop {
+  padding: 13px 16px 13px 58px;
+}
+
+.saderat-navbar .flags-desktop:after {
+  content: "";
+  width: 21px;
+  height: 21px;
+  position: absolute;
+  right: 17px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("data:image/svg+xml,%3Csvg width='21' height='12' viewBox='0 0 21 12' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M18.0086 0L10.3848 7.27965L2.76091 0L0.418945 2.24112L10.3848 11.7778L20.3506 2.24112L18.0086 0Z' fill='%23616161'/%3E%3C/svg%3E%0A");
+  top: 50%;
+  transform: translateY(-50%);
+  transition: transform 0.2s;
+}
+body.is-rtl .saderat-navbar .flags-desktop:after {
+  left: 17px;
+  right: unset;
+}
+.saderat-navbar .flags-desktop.closed:after {
+  transform: translateY(-50%) rotate(-180deg);
+  transition: transform 0.2s;
+}
+
+.hide-on-1300 {
+  display: inherit;
+}
+.show-on-1300 {
+  display: none;
+}
+
+@media screen and (max-width: 1300px) {
+  .hide-on-1300 {
+    display: none;
+  }
+  .show-on-1300 {
+    display: inline;
+  }
+
+  .saderat-navbar {
+    padding-top: 1.5rem;
+    padding-bottom: 1rem;
+  }
+  .navbar-illusion {
+    height: 90px;
+    background-color: #f000;
+    width: 100%;
+  }
+  .saderat-navbar .flags-desktop {
+    margin-top: 0px;
+  }
+  .saderat-navbar.navbar-expand-lg .navbar-nav .menu-item,
+  .saderat-navbar.navbar-expand-lg .navbar-nav .nav-link {
+    padding-bottom: 0.5rem;
+  }
+}
+
+.hide-on-992 {
+  display: inherit;
+}
+.show-on-992 {
+  display: none;
+}
+@media screen and (max-width: 992px) {
+  .hide-on-992 {
+    display: none;
+  }
+  .show-on-992 {
+    display: inline;
+  }
+  .navbar-illusion {
+    height: 90px;
+    background-color: #f000;
+    width: 100%;
+  }
+
+  .saderat-navbar .flags {
+    margin-right: 1rem;
+    margin-left: auto;
+  }
+  body.is-rtl .saderat-navbar .flags {
+    margin-right: auto;
+    margin-left: 1rem;
+  }
+
+  .saderat-navbar.navbar-expand-lg .navbar-nav {
+    align-items: center;
+  }
+  body.is-rtl .saderat-navbar.navbar-expand-lg .navbar-nav {
+    padding-right: 0;
+  }
+  .saderat-navbar .navbar-collapse {
+    margin-left: 0;
+  }
+
+  .saderat-navbar.navbar-expand-lg .navbar-nav .menu-item,
+  .saderat-navbar.navbar-expand-lg .navbar-nav .nav-link {
+    padding-bottom: auto;
+  }
+}
+
+.show-on-786 {
+  display: none;
+}
+@media screen and (max-width: 786px) {
+  .hide-on-786 {
+    display: none;
+  }
+  .show-on-786 {
+    display: inline;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .hide-on-992-and-smaller {
+    display: none;
+  }
+}
+
+/* languages */
+.lang-wrapper {
+  position: relative;
+  margin-right: 4%;
+  margin-left: 1%;
+}
+body.is-rtl .lang-wrapper {
+  margin-right: 1%;
+  margin-left: 4%;
+}
+.langs-dropdown {
+  position: absolute;
+  width: 100%;
+  max-height: 500px;
+  transition: all 0.2s;
+  overflow: hidden;
+}
+.langs-dropdown.closed {
+  max-height: 0px;
+  opacity: 0;
+  transition: all 0.2s;
+}
+
+.langs-dropdown .lang {
+  display: block;
+  width: 100%;
+  background-color: #eceff1;
+  padding: 13px 58px 13px 16px;
+  transition: background-color 0.2s;
+}
+body.is-rtl .langs-dropdown .lang {
+  padding: 13px 16px 13px 58px;
+}
+.mobile-flags {
+  position: relative;
+}
+.mobile-flags .langs-dropdown {
+  width: 70px;
+  height: auto;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 35px;
+}
+.mobile-flags .langs-dropdown .lang {
+  padding: 10px 15px 10px 15px;
+  width: auto;
+  background-color: #eceff1;
+}
+.mobile-flags .langs-dropdown .lang img {
+  width: 40px;
+  height: 27px;
+}
+.mobile-flags img {
+  width: 40px;
+  height: 27px;
+  cursor: pointer;
+}
+
+.langs-dropdown .lang:hover {
+  background-color: #dee1e2;
+  transition: background-color 0.2s;
+}
+.lang-wrapper .flags img,
+.langs-dropdown .lang img {
+  width: 45px;
+  height: 30px;
+}
+

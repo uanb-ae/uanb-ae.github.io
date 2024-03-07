@@ -1,0 +1,151 @@
+.services {
+  margin-top: 62px;
+  margin-bottom: 100px;
+}
+
+.services h1 {
+  font-size: 36px;
+  font-weight: 600;
+  margin-bottom: 44px;
+}
+
+.services .service-card {
+  background-color: #f2f2f2;
+  padding: 35px 40px 45px 40px;
+  margin-bottom: 25px;
+  min-height: calc(100% - 25px);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.services .service-card .service-img-container img {
+  width: 100%;
+}
+
+.service-card h3 img {
+  width: 35px;
+  margin-right: 14px;
+  vertical-align: bottom;
+}
+body.is-rtl .service-card h3 img {
+  margin-right: 0px;
+  margin-left: 14px;
+
+}
+.service-card h3 {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 22px;
+  margin-top: 32px;
+}
+.service-card p {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.service-card .service-text-container {
+  max-height: 120px;
+  transition: max-height 0.75s;
+  margin-bottom: 40px;
+
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
+}
+.service-card .service-text-container.expanded {
+  max-height: 1000px;
+  transition: max-height 0.75s;
+  -webkit-line-clamp: 100;
+}
+
+.service-card button.service-expand {
+  border: none;
+  outline: none;
+  font-size: 24px;
+  font-weight: 600;
+  padding: 5px 50px;
+  color: #fff;
+  background-color: var(--mainColor);
+}
+
+@media screen and (max-width: 992px) {
+  .services h1 {
+    font-size: 32px;
+    margin-bottom: 35px;
+  }
+
+  .services .service-card {
+    padding: 31px 35px 30px 35px;
+    margin-bottom: 25px;
+  }
+  .service-card h3 img {
+    width: 30px;
+    margin-right: 12px;
+  }
+  .service-card h3 {
+    font-size: 22px;
+    margin-bottom: 20px;
+    margin-top: 27px;
+  }
+  .service-card p {
+    font-size: 14px;
+  }
+  .service-card .service-text-container {
+    margin-bottom: 25px;
+  }
+
+  .service-card button.service-expand {
+    font-size: 20px;
+    padding: 5px 45px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .services {
+    margin-bottom: 12px;
+  }
+  .services-title {
+    width: 90%;
+    max-width: 350px;
+    margin: auto;
+  }
+  .services h1 {
+    font-size: 18px;
+    margin-bottom: 36px;
+  }
+  .services .service-card {
+    width: 90%;
+    max-width: 350px;
+    margin: auto;
+    background-color: #f2f2f2;
+    padding: 31px 35px 30px 35px;
+    margin-bottom: 25px;
+  }
+
+  .service-card h3 img {
+    width: 31px;
+    margin-right: 14px;
+  }
+  .service-card h3 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    margin-top: 20px;
+  }
+
+  .service-card p {
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--muted);
+  }
+  .service-card .service-text-container {
+    margin-bottom: 28px;
+  }
+  .service-card button.service-expand {
+    font-size: 18px;
+    padding: 7px 42px;
+    color: #fff;
+    background-color: var(--mainColor);
+  }
+}

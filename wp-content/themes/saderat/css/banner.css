@@ -1,0 +1,145 @@
+.container--banner {
+  overflow-x: hidden;
+  padding: 0;
+}
+.container--banner .row .col-12 {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slide__button {
+  position: absolute;
+  z-index: 2;
+  height:100%;
+  width:3.5vw;
+  display: flex;
+  justify-content:center;
+  align-items:center;
+  background-color:#0003;
+  top:50%;
+  transform:translateY(-50%);
+  font-size: 3vw;
+  color:#fff;
+  transition: all .3s
+}
+.slide__button:hover {
+  background-color:#0005;
+  transition: all .3s;
+  width:5vw
+}
+#next.slide__button {
+  right:0;
+}
+#previous.slide__button {
+  left:0;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #fff7;
+}
+
+.swiper-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow-x: hidden;
+}
+
+.container--banner .row .col-12 img {
+  height: 85vh;
+}
+@media screen and (min-width: 1600px) {
+  .swiper-img img {
+    width: 100vw;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .slide__button {
+    width:5vw;
+    font-size: 4vw;
+  }
+  .slide__button:hover {
+    width:6vw
+  }
+}
+@media screen and (max-width: 530px) {
+  .container--banner-about .row .col-12 img {
+    height: 63vh;
+  }
+  .container--banner .row .col-12 img {
+    height: 55vh;
+  }
+}
+
+/* banner-card */
+.banner-card {
+  background-color: rgb(255, 255, 255, 0.7);
+  position: absolute;
+  max-width: 628px;
+  padding: 42px 43px 42px 43px;
+  left: 7.5%;
+  z-index: 2;
+}
+body.is-rtl .banner-card {
+  text-align: right;
+  right: 7.5%;
+  left: unset;
+}
+body.is-rtl .banner-card p{
+  direction: rtl;
+}
+
+.banner-card p {
+  font-size: 19px;
+  font-weight: 700;
+}
+
+.banner-card a {
+  font-size: 24px;
+  font-weight: 600;
+  padding: 10px 48px;
+  background-color: var(--mainColor);
+  text-align: center;
+  color: #fff;
+  border: none;
+  outline: none;
+}
+.banner-card a:hover {
+  color: #fff;
+  background-color: var(--mainColor);
+}
+
+@media screen and (max-width: 768px) {
+  .banner-card {
+    /* max-width:628px; */
+    /* max-height:345px; */
+    padding: 33px 39px 30px 39px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+  }
+  body.is-rtl .banner-card {
+    right: unset;
+    left: 50%;
+  }
+
+  .banner-card h1 {
+    font-size: 18px;
+    font-weight: 600;
+  }
+  .banner-card p {
+    font-size: 13px;
+    font-weight: 400;
+    margin-bottom: 23px;
+  }
+  .container--banner-about .banner-card p {
+    margin-bottom: auto;
+  }
+  .banner-card a {
+    font-size: 18px;
+    padding: 8px 21px;
+  }
+}
